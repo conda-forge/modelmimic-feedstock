@@ -1,5 +1,5 @@
 {% set name = "modelmimic" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/modelmimic-{{ version }}.tar.gz
-  sha256: ed8be1f21c05f06af0e1c6b785aa2c5c19fc9e7fe35a12a63645a4dd72ad9a40
+  sha256: 4b48b3138923ff569c8db1e537890adfbd63525a2bb1a6292f927d81bd96505a
 
 build:
   noarch: python

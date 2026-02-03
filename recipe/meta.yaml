@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "modelmimic" %}
-{% set version = "0.0.2" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/modelmimic-{{ version }}.tar.gz
-  sha256: 4b48b3138923ff569c8db1e537890adfbd63525a2bb1a6292f927d81bd96505a
+  sha256: ae2f10bb34b94a3431b211318f553be8a36f3d413b77a3103bb3d624f9237b11
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
